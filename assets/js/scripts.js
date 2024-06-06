@@ -1,2 +1,7 @@
 var subscribeTarget = document.getElementById('subscribe');
-console.log('> subscribeTarget', subscribeTarget);
+document.getElementById("subscribe").addEventListener("click", subscribeHandler);
+
+function subscribeHandler() {
+  alert('> subscribeHandler');
+  console.log('> subscribeTarget', subscribeTarget);
+}
